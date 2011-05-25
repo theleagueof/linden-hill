@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="commaaboverightcomb" format="1">
+  <advance width="0"/>
+  <outline>
+    <contour>
+      <point x="-229" y="510" type="line"/>
+      <point x="-196" y="505" type="line"/>
+      <point x="-149" y="668" type="line"/>
+      <point x="-212" y="676" type="line"/>
+    </contour>
+  </outline>
+</glyph>

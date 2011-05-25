@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<glyph name="zero.hanging" format="1">
+  <advance width="509"/>
+  <outline>
+    <contour>
+      <point x="54" y="63"/>
+      <point x="137" y="-9"/>
+      <point x="239" y="-9" type="curve" smooth="yes"/>
+      <point x="360" y="-9"/>
+      <point x="455" y="96"/>
+      <point x="455" y="219" type="curve" smooth="yes"/>
+      <point x="455" y="328"/>
+      <point x="374" y="400"/>
+      <point x="271" y="400" type="curve" smooth="yes"/>
+      <point x="142" y="400"/>
+      <point x="54" y="292"/>
+      <point x="54" y="173" type="curve" smooth="yes"/>
+    </contour>
+    <contour>
+      <point x="101" y="288"/>
+      <point x="160" y="358"/>
+      <point x="263" y="358" type="curve" smooth="yes"/>
+      <point x="352" y="358"/>
+      <point x="408" y="281"/>
+      <point x="408" y="204" type="curve" smooth="yes"/>
+      <point x="408" y="98"/>
+      <point x="336" y="34"/>
+      <point x="250" y="34" type="curve" smooth="yes"/>
+      <point x="160" y="34"/>
+      <point x="101" y="106"/>
+      <point x="101" y="186" type="curve" smooth="yes"/>
+    </contour>
+  </outline>
+</glyph>
