@@ -11,6 +11,7 @@
 @font-face {
   font-family: 'Linden Hill';
   font-style: normal; /* Roman (Regular) */
+  src: url('LindenHill-webfont.eot'),
   src: url('LindenHill-webfont.eot?#iefix') format('embedded-opentype'),
        url('LindenHill-webfont.woff') format('woff'),
        url('LindenHill-webfont.ttf')  format('truetype'),
@@ -20,6 +21,7 @@
 @font-face {
   font-family: 'Linden Hill';
   font-style: italic;
+  src: url('LindenHill-Italic-webfont.eot'),
   src: url('LindenHill-Italic-webfont.eot?#iefix') format('embedded-opentype'),
        url('LindenHill-Italic-webfont.woff') format('woff'),
        url('LindenHill-Italic-webfont.ttf')  format('truetype'),
