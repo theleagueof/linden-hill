@@ -1,0 +1,125 @@
+languagesystem DFLT dflt;
+languagesystem latn dflt;
+languagesystem latn AZE;
+languagesystem latn CAT;
+languagesystem latn CRT;
+languagesystem latn MOL;
+languagesystem latn ROM;
+languagesystem latn TRK;
+
+#feature aalt {
+#  XX
+#} aalt;
+
+#feature aalt {
+#  XX
+#} aalt;
+
+lookup locl.CAT {
+  sub [L] by [L.CAT];
+} locl.CAT;
+
+#lookup locl.ROM {
+#  sub scedilla by uni0219;
+#  sub uni0163 by uni021B;
+#} locl.ROM;
+
+lookup locl.TRK {
+  sub [i j] by [i.TRK j.TRK];
+} locl.TRK;
+
+feature locl {
+  script latn;
+  language CAT exclude_dflt;
+  lookup locl.CAT;
+#  language MOL exclude_dflt;
+#  lookup locl.ROM;
+#  language ROM exclude_dflt;
+#  lookup locl.ROM;
+  language AZE exclude_dflt;
+  lookup locl.TRK;
+  language CRT exclude_dflt;
+  lookup locl.TRK;
+  language TRK exclude_dflt;
+  lookup locl.TRK;
+} locl;
+
+@set1 = [zero one two three four five six seven eight nine];
+@set1.numer = [zero.numer one.numer two.numer three.numer four.numer five.numer six.numer seven.numer eight.numer nine.numer];
+@set1.denom = [zero.denom one.denom two.denom three.denom four.denom five.denom six.denom seven.denom eight.denom nine.denom];
+@set1.sup = [zero.sup one.sup two.sup three.sup four.sup five.sup six.sup seven.sup eight.sup nine.sup];
+@set1.sub = [zero.sub one.sub two.sub three.sub four.sub five.sub six.sub seven.sub eight.sub nine.sub];
+
+lookup numer {
+  sub slash by fraction;
+  sub @set1 by @set1.numer;
+} numer;
+
+feature numr {
+  lookup numer;
+} numr;
+
+feature dnom {
+  sub @set1 by @set1.denom;
+} dnom;
+
+feature frac {
+  lookup numer;
+  sub [fraction @set1.denom] @set1.numer' by @set1.denom;
+} frac;
+
+feature sups {
+  sub @set1 by @set1.sup;
+} sups;
+
+feature subs {
+  sub @set1 by @set1.sub;
+} subs;
+
+lookup lining {
+  sub [zero one two three four five six seven eight nine dollar] by [zero.lining one.lining two.lining three.lining four.lining five.lining six.lining seven.lining eight.lining nine.lining dollar.lining];
+} lining;
+
+feature lnum {
+  lookup lining;
+} lnum;
+
+feature hist {
+  sub s by longs;
+} hist;
+
+feature liga {
+  sub f f b by f_f_b;
+  sub f f h by f_f_h;
+  sub f f hcircumflex by f_f_hcircumflex;
+  sub f f i by f_f_i;
+  sub f f j by f_f_j;
+  sub f f k by f_f_k;
+  sub f f l by f_f_l;
+  sub f f thorn by f_f_thorn;
+  sub f b by f_b;
+  sub f f by f_f;
+  sub f h by f_h;
+  sub f hcircumflex by f_hcircumflex;
+  sub f i by f_i;
+  sub f j by f_j;
+  sub f k by f_k;
+  sub f l by f_l;
+  sub f thorn by f_thorn;
+  sub L.CAT periodcentered by Ldot;
+  sub longs longs b by longs_longs_b;
+  sub longs longs h by longs_longs_h;
+  sub longs longs i by longs_longs_i;
+  sub longs longs j by longs_longs_j;
+  sub longs longs k by longs_longs_k;
+  sub longs longs l by longs_longs_l;
+  sub longs longs thorn by longs_longs_thorn;
+  sub longs b by longs_b;
+  sub longs longs by longs_longs;
+  sub longs h by longs_h;
+  sub longs i by longs_i;
+  sub longs j by longs_j;
+  sub longs k by longs_k;
+  sub longs l by longs_l;
+  sub longs thorn by longs_thorn;
+} liga;
